@@ -109,8 +109,9 @@ make omp-pr-summary
 ## 🧪 Usage
 
 ### 🔁 Run the tool
-
+First line lists out PR ids.
 ```bash
+gh pr list --repo llvm/llvm-project --limit 10
 ./bin/omp-pr-summary --pr <PR_NUMBER> --repo llvm/llvm-project
 ```
 
@@ -183,20 +184,6 @@ mv OpenMP-API-Specification-6-0.txt llvm/tools/omp-pr-summary/data/openmp_spec.t
 ```
 
 ---
-
-## 💡 Future Enhancements
-
-- [ ] Add LLM streaming output
-- [ ] Add GitHub Actions bot to comment on PRs
-- [ ] Auto-detect relevant keywords using NLP
-- [ ] Visual diff formatting in summary
-- [ ] Add tests for individual components
-
----
-
-## 🤝 Contributing
-
-Contributions welcome! Feel free to open issues, PRs, or suggest improvements.
 
 ---
 
