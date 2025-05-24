@@ -140,6 +140,7 @@ ollama serve
 ### 3. Pull a tiny model (e.g. TinyLLaMA)
 
 ```bash
+ollama pull tinyllama
 ollama run tinyllama
 ```
 
