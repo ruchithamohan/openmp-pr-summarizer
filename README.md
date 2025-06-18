@@ -111,7 +111,7 @@ make omp-pr-summary
 ### 🔁 Run the tool
 First line lists out PR ids.
 ```bash
-gh pr list --repo llvm/llvm-project --limit 10
+gh api repos/llvm/llvm-project/pulls --paginate -q '.[0:10] | .[] | "\(.number) \(.title)"'
 ./bin/omp-pr-summary --pr <PR_NUMBER> --repo llvm/llvm-project
 ```
 
